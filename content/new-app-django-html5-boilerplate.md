@@ -15,7 +15,7 @@ Django-H5BP
 
 This is a **reusable** Django app that is **very simple** and helps a lot.
 
-The idea is that instead you grab the HTML5 boilerplate and make it fit your new project base template, for every project, you just install this app, extend it's predefined HTML5 Boilerplate template and change the blocks that you want to.  
+The idea is that instead you grab the HTML5 boilerplate and make it fit your new project base template, for every project, you just install this app, extend it's predefined HTML5 Boilerplate template and change the blocks that you want to.
 \[adsense\]
 
 ### Installing
@@ -37,12 +37,12 @@ INSTALLED_APPS = (
 
 ### Using it!
 
-Now that you have it installed in your project, you just need to **extend** the  
-**'h5bp.html'** template in your **base** template, just changing the blocks that you want.  
+Now that you have it installed in your project, you just need to **extend** the
+**'h5bp.html'** template in your **base** template, just changing the blocks that you want.
 Here is a **simple example** for your **"base.html"** template:
 
 ``` {lang="html"}
-{% extends "h5bp.html" %}
+{% raw %}{% extends "h5bp.html" %}
 
 {% block page-title %}My Great Project{% endblock %}
 
@@ -51,14 +51,14 @@ Here is a **simple example** for your **"base.html"** template:
 {% endblock %}
 
 {% block main-container %}
-    
+
         Hello World!
-    
+
 {% endblock %}
 
 {% block footer %}
     Footer
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 What else?
@@ -76,15 +76,15 @@ I also added the **default 404.html** page to the project, but this one **has no
 
 ### Template Blocks
 
-There are some template blocks predefined to help you customize your page with lesser work, there are blocks for meta tags like **"title" and "description"**, for **Jquery.Document.Ready** section, **google analytics** and more!  
-You can checkout the full list here:  
+There are some template blocks predefined to help you customize your page with lesser work, there are blocks for meta tags like **"title" and "description"**, for **Jquery.Document.Ready** section, **google analytics** and more!
+You can checkout the full list here:
 [Django-H5BP Template Blocks](https://github.com/arruda/django-h5bp#h5bp-template-blocks "Django-H5BP template blocks")
 
 Contributing
 ------------
 
-If you find something interesting, or some bug, or juts want to say hello to the code, here is the github repository:  
+If you find something interesting, or some bug, or juts want to say hello to the code, here is the github repository:
 [Django H5BP Repository](https://github.com/arruda/django-h5bp "Django H5BP Repository").
 
-That's all folks,  
+That's all folks,
 and a **happy new year**!
